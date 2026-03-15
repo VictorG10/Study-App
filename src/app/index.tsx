@@ -1,6 +1,14 @@
+import { useAuth } from "@clerk/expo";
+import { Redirect } from "expo-router";
 import { StyleSheet, Text, View } from "react-native";
 
 export default function Index() {
+  const { isSignedIn } = useAuth();
+
+  if (!isSignedIn) {
+    return <Redirect href={"/(auth)"} />;
+  }
+
   return (
     <View style={styles.container}>
       <Text className="text-xl font-bold text-red-500">
@@ -17,5 +25,3 @@ const styles = StyleSheet.create({
     justifyContent: "center",
   },
 });
-
-// 57:13

@@ -36,7 +36,9 @@
             "imageWidth": 76
           }
         }
-      ]
+      ],
+      "expo-secure-store",
+      "@clerk/expo"
     ],
     "experiments": {
       "typedRoutes": true,
@@ -48,6 +50,6 @@
         "projectId": "23a30d8c-eef2-4656-a79f-a89c36356ffb"
       }
     },
-    "owner": "vg10",
+    "owner": "vg10"
   }
 }
