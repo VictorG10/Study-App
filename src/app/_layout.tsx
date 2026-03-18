@@ -15,7 +15,7 @@ export default function RootLayout() {
   return (
     <ClerkProvider publishableKey={publishableKey} tokenCache={tokenCache}>
       <StatusBar barStyle={"dark-content"} />
-      <Stack screenOptions={{ headerTitleAlign: "center" }}>
+      <Stack screenOptions={{ headerShown: false }}>
         <Stack.Screen name="index" options={{ title: "Home" }} />
       </Stack>
     </ClerkProvider>

@@ -14,4 +14,3 @@ export default function AuthRoutesLayout() {
 
   return <Stack screenOptions={{ headerShown: false }} />;
 }
-// 1:05:46
